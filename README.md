@@ -23,5 +23,10 @@ Before you begin, ensure you have the following installed on your system:
    git clone https://github.com/AdnanTemur/imagiforge-desktop.git
    cd imagiforge-desktop
    npm install
-   npm run star
-   
+   npm run start
+
+## Building the app
+
+```bash
+npm run make
+
