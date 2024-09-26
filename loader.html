@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          150deg,
+          #030712 0%,
+          #161616 50%,
+          #111827 100%
+        );
+      }
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #db344a;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: #111827;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: relative; width: 100%; height: 100vh">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+        "
+      >
+        <div class="loader"></div>
+      </div>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          position: absolute;
+          inset: 0;
+          z-index: 3;
+        "
+      >
+        <img
+          src="assets/logo_light.png"
+          alt="logo"
+          style="width: 100px; height: 100px; object-fit: contain"
+        />
+      </div>
+    </div>
+  </body>
+</html>
